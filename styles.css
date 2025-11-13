@@ -1,0 +1,42 @@
+body {
+    background-color: black;
+}
+
+
+
+.nav {
+    background-color: rgb(56, 0, 113);
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+
+
+.gallery img {
+    transition: 500ms;
+    margin: 0.8%;
+    margin-left: 60px;
+    margin-right: 60px;
+    justify-content: center;
+    border: 5px solid rgb(255, 255, 255);
+}
+
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+.gallery img:hover {
+    transform: scale(120%);
+    margin-left: 2%;
+    margin-top: 1%;
+}

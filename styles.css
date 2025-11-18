@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Italianno&family=Lavishly+Yours&family=Quintessential&family=Whisper&display=swap');
+
 body {
     background-color: black;
+    font-family: "Quintessential";
 }
 
+
+h1 {
+    font-family: "Italianno";
+    font-size:70px;
+}
 
 
 .nav {
@@ -40,3 +48,8 @@ body {
     margin-left: 2%;
     margin-top: 1%;
 }
+
+
+
+
+

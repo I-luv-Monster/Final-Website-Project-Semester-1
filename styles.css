@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Italianno&family=Lavishly+Yours&family=Quintessential&family=Whisper&display=swap');
 
 body {
-    background: linear-gradient(45deg, #1a0033, #000000, #330066, #1a0033);
+    background: linear-gradient(45deg, #8400ff, #000000, #330066, #1a0033);
     background-size: 400% 400%;
     animation: gradientShift 8s ease infinite;
     font-family: "Quintessential";
@@ -70,6 +70,7 @@ h1:hover {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 90px;
 }
 
 
@@ -79,8 +80,3 @@ h1:hover {
     margin-left: 2%;
     margin-top: 1%;
 }
-
-
-
-
-

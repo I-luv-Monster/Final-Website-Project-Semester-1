@@ -80,3 +80,9 @@ h1:hover {
     margin-left: 2%;
     margin-top: 1%;
 }
+
+
+.creator {
+   position:fixed;
+   right: 3%;
+}

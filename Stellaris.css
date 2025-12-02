@@ -1,50 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Italianno&family=Lavishly+Yours&family=Quintessential&family=Whisper&display=swap');
 
 body {
-    background: linear-gradient(45deg, #8400ff, #000000, #330066, #1a0033);
+    background: linear-gradient(45deg, #000814, #001d3d, #003566, #000814);
     background-size: 400% 400%;
-    animation: gradientShift 8s ease infinite;
+    animation: spaceShift 10s ease infinite;
     font-family: "Quintessential";
-    min-height: 100vh;
+}
+.nav {
+    background: linear-gradient(135deg, #0a1a3a, #1e3a5f, #2d4a73);
+    box-shadow: 0 4px 8px rgba(0, 20, 40, 0.5);
+    border-bottom: 3px solid #4a9eff;
 }
 
 .review-container {
     max-width: 900px;
     margin: 30px auto;
     padding: 30px;
-    background: linear-gradient(135deg, rgba(56, 0, 113, 0.2), rgba(0, 0, 0, 0.3));
-    border: 3px solid white;
+    background: linear-gradient(135deg, rgba(10, 26, 58, 0.3), rgba(30, 58, 95, 0.2));
+    border: 3px solid #4a9eff;
     border-radius: 15px;
-    color: white;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    color: #e6f3ff;
+    box-shadow: 0 6px 12px rgba(0, 20, 40, 0.6);
 }
 
-.game-info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 40px;
-    flex-wrap: wrap;
+.game-image {
+    width: 350px;
+    border: 5px solid #4a9eff;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 500ms;
+    box-shadow: 0 4px 8px rgba(74, 158, 255, 0.3);
 }
 
+.game-image:hover {
+    transform: scale(1.1);
+    border-color: #66b3ff;
+    box-shadow: 0 6px 12px rgba(102, 179, 255, 0.5);
+}
 
 .rating h2 {
     font-family: "Italianno";
     font-size: 48px;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #4a9eff;
+    text-shadow: 2px 2px 4px rgba(0, 20, 40, 0.7);
     margin: 20px;
 }
 
 .review-content h3 {
     font-family: "Italianno";
     font-size: 36px;
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    border-bottom: 2px solid rgb(56, 0, 113);
+    color: #66b3ff;
+    text-shadow: 1px 1px 2px rgba(0, 20, 40, 0.5);
+    border-bottom: 2px solid #4a9eff;
     padding-bottom: 5px;
 }
 
+body {
+    background: linear-gradient(45deg, #000814, #001d3d, #003566, #000814);
+    background-size: 400% 400%;
+    animation: spaceShift 10s ease infinite;
+}
+
+@keyframes spaceShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
 .nav-links a {
     text-decoration: none;
     font-size: 24px;
@@ -57,16 +78,6 @@ body {
 }
 
 .nav-links a:hover {
-    color: rgb(200, 200, 255);
+    color:#4a9eff
     transform: scale(1.1);
-}
-
-
-
-h1 {    
-    font-family: "Italianno";
-    font-size: 48px;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin: 20px;  
 }

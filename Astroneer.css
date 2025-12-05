@@ -3,49 +3,64 @@
 
 
 body {
-    background: linear-gradient(45deg, #8400ff, #000000, #330066, #1a0033);
+    background: linear-gradient(45deg, #005a9f, #5900a2, #3200bd);
     background-size: 400% 400%;
-    animation: gradientShift 8s ease infinite;
+    animation: spaceShift 15s ease infinite;
     font-family: "Quintessential";
-    min-height: 100vh;
+}
+
+@keyframes spaceShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.nav {
+    background: linear-gradient(45deg, #005a9f, #6966f5, #45007a);
+    box-shadow: 0 4px 8px rgba(0, 20, 40, 0.5);
+    border-bottom: 3px solid #ffffff;
+    font-family: "Quintessential";
+    margin-right: -20px;
+    margin-left: -20px;
+    margin-top: -21px;
 }
 
 .review-container {
     max-width: 900px;
     margin: 30px auto;
     padding: 30px;
-    background: linear-gradient(135deg, rgba(56, 0, 113, 0.2), rgba(0, 0, 0, 0.3));
-    border: 3px solid white;
+    background: linear-gradient(135deg, rgba(10, 26, 58, 0.3), rgba(30, 58, 95, 0.2));
+    border: 3px solid #ffffff;
     border-radius: 15px;
-    color: white;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    color: #e6f3ff;
+    box-shadow: 0 6px 12px rgba(0, 20, 40, 0.6);
 }
-
-.game-info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 40px;
-    flex-wrap: wrap;
-}
-
 
 .rating h2 {
     font-family: "Italianno";
     font-size: 48px;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 20, 40, 0.7);
     margin: 20px;
 }
 
 .review-content h3 {
     font-family: "Italianno";
     font-size: 36px;
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    border-bottom: 2px solid rgb(56, 0, 113);
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 20, 40, 0.5);
+    border-bottom: 2px solid #ffffff;
     padding-bottom: 5px;
 }
+
+
+
 
 .nav-links a {
     text-decoration: none;
@@ -56,19 +71,12 @@ body {
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin: 20px;
+    position:fixed;
+    top: -8px;
+    left: 2px;
 }
 
 .nav-links a:hover {
-    color: rgb(200, 200, 255);
+    color:#4a9eff;
     transform: scale(1.1);
-}
-
-
-
-h1 {    
-    font-family: "Italianno";
-    font-size: 48px;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin: 20px;  
 }
